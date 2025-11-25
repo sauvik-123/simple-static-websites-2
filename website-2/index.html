@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="sauvik sarkar">
+    <meta name="description" content="This file contains information about ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Gym WebPage
+    </title>
+    <link rel='stylesheet' href='style.css'>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="Images/nav-logo.png">
+                <p> Sauvik Fitness </p>
+            </div>
+            <div class='product-links'>
+                <ul>
+                    <li> <a href="#"> Home </a> </li>
+                    <li> <a href="#"> About Us </a> </li>
+                    <li> <a href="#"> Fitness Calculator </a> </li>
+                    <li> <a href="#"> Contact us </a> </li>
+                </ul>
+            </div>
+            <div class='btns'>
+                <button> Call Us Now </button>
+                <button> Email Us </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="main-area">
+
+            <h2> Join the best gym of Delhi now </h2>
+            <form action="introduction.php" method="get" class="form-area">
+                <!-- Name -->
+                <div>
+                    <input type="text" name="name" placeholder="Enter Your Name" required>
+                </div>
+                <!-- age -->
+                <div>
+                    <input type="number" name="age" min=18 max=60 placeholder="Enter Your Age" required>
+                </div>
+                <!-- gender -->
+                <div>
+                    <select for="gender" required name="gender" required>
+                        <option value="male"> Male </option>
+                        <option value="female"> Female </option>
+                        <option value="others"> Others </option>
+                    </select>
+                </div>
+                <!-- locality -->
+                <div>
+                    <input type="text" name="locality" required placeholder="Enter Your locality">
+                </div>
+
+                <div>
+                    <button class="submit-btn" type="submit">Submit </button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>

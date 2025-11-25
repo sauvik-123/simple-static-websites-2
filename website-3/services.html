@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="sauvik sarkar">
+    <meta name="description" content="This file contains information about ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Services - Acme Web Page
+    </title>
+    <link rel='stylesheet' href='services.css'>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <p> <span class='h-1'> Acme </span> <span class='h-2'> Web Design </span> </p>
+            <ul>
+                <li> <a href="index.html"> Home </a> </li>
+                <li> <a href="about.html"> About </a> </li>
+                <li> <a href="services.html"> Services </a> </li>
+            </ul>
+        </nav>
+    </header>
+    <hr class='hr-line'>
+    <main>
+        <section class='subs-area'>
+            <p> Subscribe To Our Newsletter</p>
+            <input type='email' name='email' placeholder="Enter Email" id='email-id'>
+            <button type='submit' id='email-id'> Subscribe </button>
+        </section>
+
+        <section>
+            <div class='left-side'>
+                <h3 class='heading-h3'> Services </h3>
+                <div class='left-side-holder'>
+
+                    <!-- box - 1 -->
+                    <div class='box box-1'>
+                        <h3> Website Design</h3>
+                        <p>
+                            We design modern, responsive websites that are visually appealing and fully functional on
+                            all devices. Whether you need a business site, personal blog, or online store, we ensure a
+                            smooth and engaging user experience tailored to your goals.
+                        </p>
+                        <p>
+                            Pricing: $1,000 – $3,000
+                        </p>
+                    </div>
+
+                    <!-- box - 2 -->
+                    <div class='box box-2'>
+                        <h3> Website Maintenance </h3>
+                        <p>
+                            Keep your website in top shape with our monthly maintenance service. We handle regular
+                            updates, security monitoring, software checks, backups, and minor content edits. This
+                            ensures your site stays fast, secure, and up-to-date—so you can focus on your business.
+                        </p>
+                        <p>
+                            Pricing: $250 per month
+                        </p>
+                    </div>
+
+                    <!-- box - 3 -->
+                    <div class='box box-3'>
+                        <h3> Website Hosting </h3>
+                        <p>
+                            We offer fast, secure, and reliable hosting to ensure your website stays online 24/7. Our
+                            hosting plans come with free SSL certificates, daily backups, and excellent uptime—giving
+                            you peace of mind while we handle the technical side. Whether you're launching a small site
+                            or a growing business, we’ve got you covered.
+                        </p>
+                        <p>
+                            Pricing: $25 per month
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class='right-side'>
+                <h3> Get A Quote </h3>
+                <form class='actual-form' method="get" action="backend.php">
+                    <!-- NAME Area -->
+                    <div>
+                        <label for='name'> Name </label>
+                        <input type='text' id='name' placeholder="Enter Name" name='name'>
+                    </div>
+
+                    <!-- EMAIL Area -->
+                    <div>
+                        <label for='email'> Email </label>
+                        <input type='email' id='email' placeholder="Enter Email" name='email'>
+                    </div>
+
+                    <!-- MESSAGE Area -->
+                    <div>
+                        <label for='msg'> Message </label>
+                        <input type='text' id='msg' placeholder="Enter Message" name='msg'>
+                    </div>
+
+                    <!-- SEND Btn -->
+                    <div>
+                        <button type='submit'> Send </button>
+                    </div>
+                </form>
+
+            </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            Acme Web Design, Copyright &copy; 2017
+        </p>
+    </footer>
+</body>
+
+</html>

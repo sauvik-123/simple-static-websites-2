@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "arial", sans-serif;
+}
+
+header .title {
+  width: 100%;
+  height: 85px;
+  background-color: #806bdc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+h1 {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 550;
+}
+
+.item-row {
+  height: 160px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+}
+
+main .item-container {
+  cursor: pointer;
+  padding: 5px;
+  height: 150px;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+main .item-container img {
+  padding-top: 15px;
+  height: 84px;
+  width: auto;
+}
+
+main .item-container p {
+  color: black;
+  padding: 10px;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+main .item-container p:hover{
+    color:#806bdc;
+}
+
+main .main-content {
+  width: 100%;
+  background-color: lightgrey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .main-content img {
+  margin-top: 30px;
+  margin-bottom: 0px;
+  width: 90vw;
+  height: 60vh;
+}
+
+main .shopping-container {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+
+table {
+  height: 25vh;
+  width: 90vw;
+  border: 1px solid black;
+  padding: 5px;
+  font-size: 1.2rem;
+  border-collapse: collapse;
+  background-color: #d3d3d3;
+}
+
+thead {
+  background-color: #806bdc;
+  color: black;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 12px;
+  text-align: start;
+}
+
+th {
+  font-weight: 600;
+  text-align: center;
+  border-color: grey;
+}
+
+.discount {
+  text-decoration: line-through;
+  color: black;
+}
+
+.information {
+  height: 50vh;
+  width: 100%;
+}
+
+.information h1 {
+  color: grey;
+  padding: 15px;
+}
+
+.information p {
+  margin-left: 10px;
+  padding: 5px;
+  line-height: 1rem;
+  color: grey;
+  font-size: 12px;
+}
+
+.information .info-3 {
+  margin-top: 0px;
+}
+
+.information h2 {
+  color: grey;
+  padding: 10px 0px 1px 15px;
+}
+
+.information .info-4 {
+  margin-bottom: 0px;
+}
+
+.information ul li {
+  list-style-position: inside;
+  padding-left: 30px;
+  font-size: 0.8rem;
+  color: grey;
+}
+
+footer {
+  margin-top: 75px;
+  width: 100%;
+  background-color: black;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+footer p {
+  color: white;
+  font-size: 1.1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .item-row {
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  .item-container {
+    width: 50%;
+    height: auto;
+    margin-bottom: 15px;
+  }
+
+  main .main-content img {
+    width: 95vw;
+    height: auto;
+  }
+
+  table {
+    font-size: 1rem;
+  }
+
+  .information {
+    height: auto;
+    padding: 10px;
+  }
+}

@@ -1,0 +1,343 @@
+/* CSS reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+}
+
+/* nav bar */
+header nav {
+  display: flex;
+  align-items: center;
+  height: 6.5rem;
+  justify-content: space-around;
+  background-color: #35424a;
+  gap: 240px;
+}
+
+/* list styling */
+header nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  font-size: 1.5rem;
+  margin-right: 60px;
+}
+
+/* hero styling */
+p {
+  color: white;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+header nav .h-1,
+header nav .h-2 {
+  color: white;
+  font-size: 2.6rem;
+}
+
+header nav .h-1 {
+  font-size: 2.1rem;
+  color: #e8491d;
+}
+
+/* list links styling */
+li a {
+  text-decoration: none;
+  color: white;
+}
+
+li a:hover {
+  color: #e8491d;
+}
+
+/* horizontal line styling */
+.hr-line {
+  width: 100vw;
+  color: #e8491d;
+  border: 2px solid #e8491d;
+}
+
+/* subscribe area */
+main .subs-area {
+  background-color: #35424a;
+  height: 15vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subs-area p {
+  font-weight: 800;
+  font-size: 1.8rem;
+  margin-right: 400px;
+}
+
+/* subs input styling */
+.subs-area input[type="email"] {
+  height: 40px;
+  font-size: 17px;
+  font-weight: 600;
+  width: 20vw;
+  margin-right: 10px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+/* subs btn styling */
+.subs-area button {
+  height: 43px;
+  width: 110px;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  color: black;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.15s ease-in;
+}
+
+/* subscribe btn [hover] styling */
+button:hover {
+  background: linear-gradient(to right, #43e97b, #38f9d7);
+  cursor: pointer;
+  border: 3px solid white;
+}
+
+/* MAIN-section */
+section {
+  display: flex;
+  flex-direction: row;
+}
+
+/* LEFT side */
+section .left-side {
+  width: 67vw;
+  height: 92vh;
+}
+
+section .left-side .heading-h3 {
+  margin-left: 100px;
+  padding: 20px;
+  font-size: 1.6rem;
+  font-weight: 900;
+}
+
+/* left Side Holder */
+section .left-side-holder {
+  height: 82vh;
+  width: 57vw;
+  margin-left: 85px;
+}
+
+/* BOX - 1 */
+.box {
+  border: 3px solid #e67e22;
+  border-radius: 10px;
+  height: 12.5rem;
+  width: 55vw;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.box h3 {
+  font-weight: 600;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-size: 1.45rem;
+}
+
+.box p {
+  padding-left: 30px;
+  padding-bottom: 10px;
+  color: black;
+  padding-right: 10px;
+  font-size: 1.15rem;
+}
+
+/* RIGHT Side */
+section .right-side {
+  height: 40vh;
+  width: 35vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 75px;
+  margin-right: 50px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  border: none;
+  border-radius: 10px;
+}
+
+/* right side heading */
+.right-side h3 {
+  margin-left: 20px;
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 800;
+}
+
+/* right side label */
+.right-side label {
+  font-size: 1.1rem;
+  padding: 5px;
+  color: white;
+  font-weight: 600;
+}
+
+/* right side input */
+.right-side input[type="text"],
+input[type="email"] {
+  padding: 6px 10px;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: none;
+  width: 20rem;
+}
+
+/* right side btn */
+.right-side button {
+  margin-left: 150px;
+  height: 2rem;
+  width: 10rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: all 0.15s ease-in;
+}
+
+.right-side button:hover {
+  border: 3px solid white;
+  cursor: pointer;
+}
+
+.right-side div {
+  margin: 20px;
+}
+
+/* footer */
+footer {
+  /* margin-top:50px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 7rem;
+  height: 4rem;
+  background-color: #e8491d;
+  font-size: 1.3rem;
+}
+
+/* ====================
+   Responsive Design
+==================== */
+
+/* For tablets and medium devices (width ≤ 1024px) */
+@media (max-width: 1024px) {
+  header nav {
+    gap: 100px;
+    flex-wrap: wrap;
+  }
+
+  header nav ul {
+    gap: 30px;
+    font-size: 1.2rem;
+    margin-right: 20px;
+  }
+
+  .subs-area p {
+    margin-right: 100px;
+    font-size: 1.5rem;
+  }
+
+  section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-side,
+  .right-side {
+    width: 90vw;
+    height: auto;
+  }
+
+  .left-side-holder {
+    width: 85vw;
+    margin-left: 0;
+  }
+
+  .box {
+    width: 100%;
+  }
+
+  .right-side {
+    margin: 2rem 0;
+    align-items: center;
+  }
+
+  .right-side button {
+    margin-left: 0;
+  }
+}
+
+/* For mobile devices (width ≤ 768px) */
+@media (max-width: 768px) {
+  header nav {
+    flex-direction: column;
+    gap: 20px;
+    padding: 1rem 0;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    gap: 15px;
+    margin-right: 0;
+  }
+
+  .h-1,
+  .h-2 {
+    font-size: 2rem;
+  }
+
+  .subs-area {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    gap: 1rem;
+  }
+
+  .subs-area p {
+    margin: 0;
+    text-align: center;
+  }
+
+  .subs-area input[type="email"],
+  .subs-area button {
+    width: 90%;
+  }
+
+  .right-side input[type="text"],
+  .right-side input[type="email"] {
+    width: 90%;
+  }
+
+  footer {
+    font-size: 1rem;
+    text-align: center;
+    padding: 1rem;
+  }
+}
